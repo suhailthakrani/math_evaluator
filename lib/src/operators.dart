@@ -1,7 +1,7 @@
 enum Operator {
   multiply,
   divide,
-  add,
+  addition,
   subtract,
   square,
   squareRoot,
@@ -10,11 +10,15 @@ enum Operator {
   sin,
   cos,
   tan,
+  cosec,
+  sec,
+  cot,
   log,
   base,
   degree,
   radian,
   percent,
   factorial,
+  negate,
 
 }
