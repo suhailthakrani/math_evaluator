@@ -7,6 +7,8 @@ enum Operator {
   squareRoot,
   cubeRoot,
   power,
+  bracketOpen,
+  bracketClose,
   sin,
   cos,
   tan,
@@ -20,5 +22,4 @@ enum Operator {
   percent,
   factorial,
   negate,
-
 }
