@@ -1,34 +1,34 @@
-import 'package:math_evaluator/src/enums/operator.dart';
+import 'package:math_evaluator/src/enums/operators.dart';
 
 import 'models/expression.dart';
 
 class MathEvaluator {
   static defaultOptions() => {
-        '+': Operator.addition,
-        '-': Operator.subtract,
-        '/': Operator.divide,
-        '*': Operator.multiply,
-        '%': Operator.percent,
-        '^': Operator.power,
-        '(': Operator.bracketOpen,
-        ')': Operator.bracketClose,
-        'sqrt': Operator.squareRoot,
-        'sqr': Operator.square,
-        'log': Operator.log,
-        'deg': Operator.degree,
-        'rad': Operator.radian,
-        'fact': Operator.factorial,
-        'sin': Operator.sin,
-        'cos': Operator.cos,
-        'tan': Operator.tan,
-        'cosec': Operator.cosec,
-        'sec': Operator.sec,
-        'cot': Operator.cot,
+        '+': Operators.addition,
+        '-': Operators.subtract,
+        '/': Operators.divide,
+        '*': Operators.multiply,
+        '%': Operators.percent,
+        '^': Operators.power,
+        '(': Operators.bracketOpen,
+        ')': Operators.bracketClose,
+        'sqrt': Operators.squareRoot,
+        'sqr': Operators.square,
+        'log': Operators.log,
+        'deg': Operators.degree,
+        'rad': Operators.radian,
+        'fact': Operators.factorial,
+        'sin': Operators.sin,
+        'cos': Operators.cos,
+        'tan': Operators.tan,
+        'cosec': Operators.cosec,
+        'sec': Operators.sec,
+        'cot': Operators.cot,
       };
 
   static String? evaluate(
     String rawExpression, [
-    Map<String, Operator>? options,
+    Map<String, Operators>? options,
   ]) {
     options = options ?? defaultOptions();
 

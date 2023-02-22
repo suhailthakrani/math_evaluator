@@ -1,9 +1,9 @@
-import 'package:math_evaluator/src/enums/operator.dart';
+import 'package:math_evaluator/src/enums/operators.dart';
 import 'package:math_evaluator/src/extensions/extensions.dart';
 
 class Expression {
   String expression;
-  Map<String, Operator> options;
+  Map<String, Operators> options;
 
   List _expression = [];
   List<Expression> subExpressions = [];
@@ -23,7 +23,5 @@ class Expression {
     }
   }
 
-  String? solve() {
-    return null;
-  }
+  String? solve() {}
 }

@@ -1,4 +1,4 @@
-enum Operator {
+enum Operators {
   multiply,
   divide,
   addition,
